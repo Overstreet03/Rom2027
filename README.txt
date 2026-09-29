@@ -1,0 +1,1 @@
+Rom 2027 Reise-App\n\nRom2027.html ist die vollständige mobile Reise-App.\n\nWichtig: Für die Nutzung als Home-Bildschirm-App muss die HTML-Datei über eine Webadresse geöffnet werden; eine lokale Datei kann auf iPhone/iPad nicht zuverlässig als echte PWA installiert werden.\n

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#29415D">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Rom 2027">
+<link rel="manifest" href="manifest.webmanifest">
+<title>Rom 2027 – Reise-App</title>
+<style>
+:root{--navy:#29415D;--blue:#145DA0;--bg:#F4F6F8;--card:#FFF;--text:#182330;--muted:#607080;--line:#D7DFE6;--soft:#EAF0F5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",Arial,sans-serif;line-height:1.45}
+header{background:var(--navy);color:#fff;padding:30px 18px 22px;position:sticky;top:0;z-index:20;box-shadow:0 2px 12px #0003}
+header h1{margin:0;font-size:27px}header p{margin:4px 0 0;opacity:.9;font-size:14px}
+nav{display:flex;gap:7px;overflow:auto;padding:10px 12px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:94px;z-index:19}
+nav a{flex:0 0 auto;text-decoration:none;background:var(--soft);color:var(--navy);padding:7px 10px;border-radius:20px;font-size:12px;font-weight:700}
+main{max-width:760px;margin:auto;padding:10px 13px 45px}
+.card,.day,.info{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:17px;margin:12px 0;box-shadow:0 2px 8px #0000000b}
+.card h2,.day h2{font-size:20px;margin:4px 0 10px}h3{font-size:16px;margin:17px 0 7px}
+.date{font-weight:800;color:var(--blue);font-size:13px}.route{font-weight:650;margin:0 0 10px}.note{color:var(--muted);font-size:14px}
+.actions{display:grid;gap:8px;margin-top:12px}.primary,.secondary,.res{display:block;text-decoration:none;border-radius:11px;padding:12px 13px;font-weight:750;text-align:center}
+.primary{background:var(--blue);color:white}.secondary{background:var(--soft);color:var(--navy)}
+ul{padding-left:20px;margin:7px 0}li{margin:9px 0}li span{color:var(--muted);font-size:13px}
+.res{background:#fff;border:1px solid var(--line);color:var(--text);text-align:left;margin:8px 0}.res span{display:block;color:var(--blue);font-size:13px;margin-top:2px}
+.small{font-size:12px;color:var(--muted)}footer{text-align:center;font-size:12px;color:var(--muted);padding:8px 20px 30px}
+</style>
+</head>
+<body>
+<header><h1>🇮🇹 Rom 2027</h1><p>04.–10. Januar · Reise-App für unterwegs</p></header>
+<nav>
+<a href="#start">Start</a><a href="#tage">Tage</a><a href="#buchung">Reservieren</a><a href="#reise">An-/Abreise</a>
+</nav>
+<main>
+<section id="start" class="card">
+<h2>Unsere Rom-Reise</h2>
+<p><b>2 Personen · Hotel bei Roma Termini</b><br>Schwerpunkt: Rom zu Fuß erleben – Antike, Vatikan, Altstadt, Parks, Via Appia, Aussichtspunkte und gutes einfaches Essen.</p>
+<p class="small">Die Galleria Borghese ist aus der Planung gestrichen. Die Vatikanischen Museen sind für 07.01. vorgesehen; 08.01. bleibt als Ausweichtermin. Die Petersdom-Kuppel bleibt flexibel.</p>
+</section>
+<section id="tage"><h2>📅 Unsere Tagesrouten</h2>
+    <article class="day">
+      <div class="date">Mo 04.01.</div><h2>Ankommen &amp; historisches Zentrum</h2>
+      <p class="route">Roma Termini → Santa Maria Maggiore → Trevi-Brunnen → Pantheon → Piazza Navona → Campo de&#x27; Fiori</p>
+      <p class="note">Lockerer Einstieg nach der Ankunft. Viel zu Fuß, mit Pausen.</p>
+      <div class="actions">
+        <a class="primary" href="https://www.google.com/maps/dir/?api=1&origin=Roma%20Termini&destination=Campo%20de%27%20Fiori&waypoints=Santa%20Maria%20Maggiore%7CTrevi-Brunnen%7CPantheon%7CPiazza%20Navona&travelmode=walking">🗺️ Google Maps – ganze Route</a>
+        <a class="secondary" href="https://maps.apple.com/?saddr=Roma%20Termini&daddr=Campo%20de%27%20Fiori&dirflg=w"> Apple Karten – Route</a>
+      </div>
+      <h3>🍝 Essen passend zur Route</h3>
+      <ul><li><b>Pane e Salame</b><br><span>Via di Santa Maria in Via 19</span></li><li><b>Trattoria Della Stampa</b><br><span>Via dei Maroniti 32</span></li><li><b>Two Sizes</b><br><span>Via del Governo Vecchio 88</span></li></ul>
+    </article>
+    
+    <article class="day">
+      <div class="date">Di 05.01.</div><h2>Antikes Rom &amp; Aventin</h2>
+      <p class="route">Kolosseum → Forum Romanum → Palatin → Circus Maximus → Giardino degli Aranci → Aventin</p>
+      <p class="note">08:30 Uhr Kolosseum anstreben. Danach Forum/Palatin und zu Fuß Richtung Aventin; abends Monti.</p>
+      <div class="actions">
+        <a class="primary" href="https://www.google.com/maps/dir/?api=1&origin=Kolosseum&destination=Aventin&waypoints=Forum%20Romanum%7CPalatin%7CCircus%20Maximus%7CGiardino%20degli%20Aranci&travelmode=walking">🗺️ Google Maps – ganze Route</a>
+        <a class="secondary" href="https://maps.apple.com/?saddr=Kolosseum&daddr=Aventin&dirflg=w"> Apple Karten – Route</a>
+      </div>
+      <h3>🍝 Essen passend zur Route</h3>
+      <ul><li><b>Zia Rosetta</b><br><span>Via Urbana 54</span></li><li><b>La Carbonara</b><br><span>Via Panisperna 214</span></li><li><b>Analemma</b><br><span>Via Leonina 77</span></li></ul>
+    </article>
+    
+    <article class="day">
+      <div class="date">Mi 06.01.</div><h2>Petersdom, Kuppel &amp; Trastevere</h2>
+      <p class="route">Petersplatz → Petersdom → Petersdom Kuppel → Engelsburg → Ponte Sant&#x27;Angelo → Piazza Navona → Trastevere</p>
+      <p class="note">Epiphanias/La Befana. Vatikanische Museen nicht einplanen. Petersdom möglichst früh.</p>
+      <div class="actions">
+        <a class="primary" href="https://www.google.com/maps/dir/?api=1&origin=Petersplatz&destination=Trastevere&waypoints=Petersdom%7CPetersdom%20Kuppel%7CEngelsburg%7CPonte%20Sant%27Angelo%7CPiazza%20Navona&travelmode=walking">🗺️ Google Maps – ganze Route</a>
+        <a class="secondary" href="https://maps.apple.com/?saddr=Petersplatz&daddr=Trastevere&dirflg=w"> Apple Karten – Route</a>
+      </div>
+      <h3>🍝 Essen passend zur Route</h3>
+      <ul><li><b>I Supplì</b><br><span>Via di San Francesco a Ripa 137</span></li><li><b>Da Enzo al 29</b><br><span>Via dei Vascellari 29</span></li><li><b>Two Sizes</b><br><span>Via del Governo Vecchio 88</span></li></ul>
+    </article>
+    
+    <article class="day">
+      <div class="date">Do 07.01.</div><h2>Vatikanische Museen &amp; Prati</h2>
+      <p class="route">Vatikanische Museen → Sixtinische Kapelle → Petersdom → Engelsburg → Prati</p>
+      <p class="note">Frühen reservierten Museumstermin nutzen. Kuppel bleibt flexibel und kann auf 08.01. verschoben werden.</p>
+      <div class="actions">
+        <a class="primary" href="https://www.google.com/maps/dir/?api=1&origin=Vatikanische%20Museen&destination=Prati&waypoints=Sixtinische%20Kapelle%7CPetersdom%7CEngelsburg&travelmode=walking">🗺️ Google Maps – ganze Route</a>
+        <a class="secondary" href="https://maps.apple.com/?saddr=Vatikanische%20Museen&daddr=Prati&dirflg=w"> Apple Karten – Route</a>
+      </div>
+      <h3>🍝 Essen passend zur Route</h3>
+      <ul><li><b>Roscioli</b><br><span>Via dei Giubbonari 21</span></li><li><b>Pane e Salame</b><br><span>Via di Santa Maria in Via 19</span></li><li><b>Two Sizes</b><br><span>Via del Governo Vecchio 88</span></li></ul>
+    </article>
+    
+    <article class="day">
+      <div class="date">Fr 08.01.</div><h2>Via Appia Antica &amp; Caffarella</h2>
+      <p class="route">Roma Termini → Domine Quo Vadis → Katakomben San Callisto → San Sebastiano → Cecilia Metella → Caffarella</p>
+      <p class="note">Etwa 5–7 km auswählen; nicht die gesamte Via Appia laufen. Proviant vorher mitnehmen.</p>
+      <div class="actions">
+        <a class="primary" href="https://www.google.com/maps/dir/?api=1&origin=Roma%20Termini&destination=Caffarella&waypoints=Domine%20Quo%20Vadis%7CKatakomben%20San%20Callisto%7CSan%20Sebastiano%7CCecilia%20Metella&travelmode=walking">🗺️ Google Maps – ganze Route</a>
+        <a class="secondary" href="https://maps.apple.com/?saddr=Roma%20Termini&daddr=Caffarella&dirflg=w"> Apple Karten – Route</a>
+      </div>
+      <h3>🍝 Essen passend zur Route</h3>
+      <ul><li><b>Proviant mitnehmen</b><br><span>für unterwegs</span></li><li><b>Mercato Centrale</b><br><span>Via Giovanni Giolitti 36</span></li><li><b>Flavio al Velavevodetto</b><br><span>Via di Monte Testaccio 97</span></li></ul>
+    </article>
+    
+    <article class="day">
+      <div class="date">Sa 09.01.</div><h2>Trastevere, Testaccio, Aventin &amp; Pincio</h2>
+      <p class="route">Santa Maria in Trastevere → Isola Tiberina → Jüdisches Viertel → Testaccio → Giardino degli Aranci → Pincio</p>
+      <p class="note">Entspannter Abschlusstag. Pincio gegen ca. 16:15 Uhr einplanen.</p>
+      <div class="actions">
+        <a class="primary" href="https://www.google.com/maps/dir/?api=1&origin=Santa%20Maria%20in%20Trastevere&destination=Pincio&waypoints=Isola%20Tiberina%7CJ%C3%BCdisches%20Viertel%7CTestaccio%7CGiardino%20degli%20Aranci&travelmode=walking">🗺️ Google Maps – ganze Route</a>
+        <a class="secondary" href="https://maps.apple.com/?saddr=Santa%20Maria%20in%20Trastevere&daddr=Pincio&dirflg=w"> Apple Karten – Route</a>
+      </div>
+      <h3>🍝 Essen passend zur Route</h3>
+      <ul><li><b>Mordi e Vai</b><br><span>Mercato Testaccio, Box 15</span></li><li><b>I Supplì</b><br><span>Via di San Francesco a Ripa 137</span></li><li><b>Flavio al Velavevodetto</b><br><span>Via di Monte Testaccio 97</span></li></ul>
+    </article>
+    
+    <article class="day">
+      <div class="date">So 10.01.</div><h2>Letzte Runde &amp; Fiumicino</h2>
+      <p class="route">Hotel bei Roma Termini → Trevi-Brunnen → Pantheon → Piazza Navona → Roma Termini → Flughafen Fiumicino</p>
+      <p class="note">15:45–16:15 Uhr zurück zum Hotel; spätestens ca. 16:45 Uhr Termini; etwa 17:00 Uhr Leonardo Express; Ziel Flughafen 18:00 Uhr.</p>
+      <div class="actions">
+        <a class="primary" href="https://www.google.com/maps/dir/?api=1&origin=Hotel%20bei%20Roma%20Termini&destination=Flughafen%20Fiumicino&waypoints=Trevi-Brunnen%7CPantheon%7CPiazza%20Navona%7CRoma%20Termini&travelmode=walking">🗺️ Google Maps – ganze Route</a>
+        <a class="secondary" href="https://maps.apple.com/?saddr=Hotel%20bei%20Roma%20Termini&daddr=Flughafen%20Fiumicino&dirflg=w"> Apple Karten – Route</a>
+      </div>
+      <h3>🍝 Essen passend zur Route</h3>
+      <ul><li><b>Mercato Centrale</b><br><span>Via Giovanni Giolitti 36</span></li><li><b>Trapizzino</b><br><span>Via Giovanni Giolitti 36</span></li><li><b>Pane e Salame</b><br><span>Via di Santa Maria in Via 19</span></li></ul>
+    </article>
+    </section>
+<section id="buchung" class="card"><h2>🎟️ Reservierungen</h2>
+<p class="small">Für die Buchung möglichst die offiziellen Seiten verwenden.</p><a class="res" href="https://tickets.museivaticani.va/"><b>Vatikanische Museen</b><span>Reservierung öffnen →</span></a><a class="res" href="https://booking.basilicasanpietro.va/en/"><b>Petersdom – Kuppel</b><span>Reservierung öffnen →</span></a><a class="res" href="https://ticketing.colosseo.it/en"><b>Kolosseum / Forum / Palatin</b><span>Reservierung öffnen →</span></a><a class="res" href="https://www.pantheonroma.com/en/visit-the-pantheon/"><b>Pantheon</b><span>Reservierung öffnen →</span></a></section>
+<section id="reise" class="card"><h2>✈️ An- & Abreise</h2>
+<p><b>04.01. Ankunft:</b> Fiumicino 08:00 → Leonardo Express → Roma Termini. Etwa 32 Minuten reine Fahrzeit.</p>
+<p><b>10.01. Abflug:</b> spätestens ca. 16:45 Uhr an Termini → etwa 17:00 Leonardo Express → ca. 17:32 Fiumicino → Ziel 18:00 Uhr.</p>
+<a class="primary" href="https://www.google.com/maps/dir/?api=1&origin=Fiumicino%20Airport&destination=Roma%20Termini&travelmode=transit">🗺️ Google Maps: Fiumicino → Termini</a>
+</section>
+<div class="info small"><b>Hinweis:</b> Die Kartenlinks öffnen Google Maps bzw. Apple Karten. Für aktuelle Navigation, Verkehr und ÖPNV-Verbindungen wird eine Internetverbindung benötigt.</div>
+</main>
+<footer>Rom-Reise 04.–10.01.2027 · persönliche Reise-App</footer>
+</body></html>
